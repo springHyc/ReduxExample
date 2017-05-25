@@ -1,13 +1,23 @@
-import React from 'react';
+import React from "react";
 
 export default function CityPanel(props) {
-  let input
+  let input;
   return (
-    <div>
-    <p>Welcome to, {props.city}</p>
-    城市：<input ref={node => {
-          input = node
-        }}  onChange={()=>props.onChange(input.value)}/>
-    </div>
+    <form
+      onSubmit={e => {
+        e.preventDefault();
+        props.onClick();
+        input.value = "";
+      }}
+    >
+      <p>Welcome to {props.city}</p>
+      城市：<input
+        ref={node => {
+          input = node;
+        }}
+        onChange={() => props.onChange(input.value)}
+      />
+      <button type="submit">清空</button>
+    </form>
   );
 }
