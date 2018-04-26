@@ -11,7 +11,7 @@ export default function CityPanel(props) {
       }}
     >
       <p>Welcome to {props.city}</p>
-      城市：<input
+      城市22：<input
         ref={node => {
           input = node;
         }}
