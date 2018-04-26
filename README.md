@@ -1,6 +1,12 @@
 # ReduxExample
 
-学习 redux 时自己写的例子
+学习 redux 时自己写的例子。 demo 地址：https://springhyc.github.io/ReduxExample/
+
+这个例子只是一个简单的同步的使用 redux 的例子。查看项目时，可以打开控制台，之用后用[redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension#usage)来查看 redux 的情况。
+
+如下图：
+
+![demo](./images/demo.png)
 
 ## 本地启动项目
 
